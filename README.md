@@ -38,4 +38,4 @@ The structure and styling of the app are based on HTML and CSS.
 Feel free to use this project as a starting point for your own to-do list app or customize it further to suit your needs.
 
 # Feedback & Support
-If you encounter any issues, have suggestions for improvements, or need assistance, please don't hesitate to reach out. We value your feedback and are here to help make your task-noting experience with Quick Notes as smooth as possible.
+If you encounter any issues, have suggestions for improvements, or need assistance, please don't hesitate to reach out. We value your feedback and are here to help make your task-noting experience with To-do-List as smooth as possible.
