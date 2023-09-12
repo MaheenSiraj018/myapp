@@ -91,7 +91,6 @@ const Todowrapper = () => {
     function findEditingTask() {
         const editingTodo = todos.find((todo) => todo.isEditing === true);
         if (editingTodo) {
-            // editingTodo.isEditing=false;
             return { id: editingTodo.id, name: editingTodo.task, isEditing:editingTodo.isEditing };
         }
         return null;
@@ -103,25 +102,8 @@ const Todowrapper = () => {
     return (
         <div>
             <h1>Get Things Done!</h1>
-            {todos.length > 0 ? (
-                editingTask === null ? (
-                    <Todoform
-                        placeholdertext="Enter task for today"
-                        addTodo={addTodo}
-                        removealltasks={removealltasks}
-                        buttonname="Add Task"
-                        task={editingTask}
-                    />
-                ) : (
-                    <Todoform
-                        addTodo={addTodo}
-                        removealltasks={removealltasks}
-                        editTask={editTask}
-                        task={editingTask}
-                        buttonname="Update"
-                    />
-                )
-            ) : (
+        {
+            editingTask === null ? (
                 <Todoform
                     placeholdertext="Enter task for today"
                     addTodo={addTodo}
@@ -129,8 +111,17 @@ const Todowrapper = () => {
                     buttonname="Add Task"
                     task={editingTask}
                 />
-            )}
-            
+            ) : (
+                <Todoform
+                    addTodo={addTodo}
+                    removealltasks={removealltasks}
+                    editTask={editTask}
+                    task={editingTask}
+                    buttonname="Update"
+                />
+            )
+        }
+
             {/* <Todoform addTodo={addTodo} removealltasks={removealltasks}/> 
             if()
              { todos && todos?.length > 0 && todos.map((todo, index) => (
@@ -140,8 +131,6 @@ const Todowrapper = () => {
             
             {todos && todos?.length > 0 && todos.map((todo, index) => (
                 <Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo} />))}
-
-
         </div>
     )
 }
