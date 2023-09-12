@@ -1,4 +1,4 @@
-# Simple React To-Do List
+# React To-Do List
 
 A minimalistic and responsive to-do list web app built using React. This project showcases key concepts like React hooks, props, and state management. Users can effortlessly add, remove, edit, and mark tasks as completed. Task data is persistently stored in local storage, ensuring tasks are retained even after refreshing the page.
 
