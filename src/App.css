@@ -22,11 +22,12 @@ h1 {
   color: #fff;
   margin-bottom: 0.5rem;
   font-size: 1.75rem;
+  text-align: center;
 }
 
 .Todowrapper {
   background: #1A1A40;
-  margin-top: 5rem;
+  margin-top:5rem;
   padding: 2rem;
   border-radius: 5px;
 }
@@ -42,7 +43,7 @@ h1 {
   border: 1px solid #8758ff;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 300px;
   color: #fff;
 }
@@ -54,7 +55,7 @@ h1 {
 .todobtn {
   background: #8758ff;
   color: #fff;
-  border: none;
+  border: 1px solid black;
   padding: 0.55rem;
   cursor: pointer;
   
@@ -81,7 +82,26 @@ h1 {
   text-decoration: line-through;
 }
 #error{
-  font-size: 10px;
+  font-size: 2vw;
   color: red;
   margin-top: 2px;
+}
+
+@media only screen and (max-width:768px){
+  .todoinput{
+    width:86vw;
+  }
+  .todobtn{
+    width:43vw;
+    margin-bottom: 3vh;
+  }
+  .Todowrapper{
+    margin: 2vw;
+    padding: 5vw;
+    margin-top:6vw;
+   
+  }
+  #error{
+    font-size: 4vw;
+  }
 }
